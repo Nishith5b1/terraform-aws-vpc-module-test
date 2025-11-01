@@ -1,5 +1,5 @@
-# resource "aws_ssm_parameter" "vpc_id"{
-#     type = "String"
-#     name="/${var.project_name}/${var.environment}/vpc_id"
-#     value = module.vpc.vpc_id
-#     }
+resource "aws_ssm_parameter" "vpc_id"{
+    type = "String"
+    name="/${var.project_name}/${var.environment}/vpc_id"
+    value = module.vpc.vpc_id
+    }
